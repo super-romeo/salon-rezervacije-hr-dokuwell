@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Za male frizerske i kozmetičke salone u Hrvatskoj: online rezervacije u bilo koje doba, kalendar za svako mjesto i podsjetnici klijentima.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -65,38 +69,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Termin Salon</a></div>
-  <nav class="top"><a href="#sto" data-ev="click_nav_sto">Što dobivate</a><a href="price.html" data-ev="click_nav_cijena">Cijena</a><a href="#primjer" data-ev="click_nav_primjer">Primjer</a><a href="#start" data-ev="click_nav_start">Početak</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Termin Salon</a>
+  <nav><a href="#sto" data-ev="click_nav_sto">Što dobivate</a><a href="price.html" data-ev="click_nav_cijena">Cijena</a><a href="#primjer" data-ev="click_nav_primjer">Primjer</a><a href="#start" data-ev="click_nav_start">Početak</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Online rezervacije za vaš salon, s kalendarom za svako mjesto</h1>
-    <p class="sub">Za male salone i barbershope u Hrvatskoj: klijent sam bira uslugu, frizera i slobodan termin na vašoj stranici, a dan prije dobiva podsjetnik.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">To mi treba</a>
-    <p class="cta-note">Rani pristup · Na ovoj stranici još ne primamo plaćanja</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Za male salone i barbershope</p>
+      <h1 class="rise" style="--i:1">Online rezervacije za vaš salon, s kalendarom za svako mjesto</h1>
+      <p class="rise" style="--i:2">Za male salone i barbershope u Hrvatskoj: klijent sam bira uslugu, frizera i slobodan termin na vašoj stranici, a dan prije dobiva podsjetnik.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">To mi treba</a>
+      <p class="meta rise" style="--i:4">Rani pristup · Na ovoj stranici još ne primamo plaćanja</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="40" fill="#0a1524" font-weight="600">Kalendar</text><text x="130" y="230" font-size="32" fill="#566174">slobodan termin</text><rect x="130" y="290" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="275" y="290" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="420" y="290" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="565" y="290" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="410" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="275" y="410" width="120" height="88" fill="#12397a" rx="8" stroke="#12397a" stroke-width="3" /><rect x="420" y="410" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="565" y="410" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="530" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="275" y="530" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="420" y="530" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="565" y="530" width="120" height="88" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="760" y="290" width="300" height="360" fill="#dfe8f7" rx="18" /><text x="790" y="360" font-size="32" fill="#0a1524" font-weight="600">podsjetnik</text></svg></figure>
+    <dl class="facts">
+      <div><dt>Za</dt><dd>Male salone i barbershope</dd></div>
+      <div><dt>Salon</dt><dd>Online rezervacije</dd></div>
+      <div><dt>Podsjetnik</dt><dd>Dan prije dobiva podsjetnik</dd></div>
+      <div><dt>Pristup</dt><dd>Rani pristup</dd></div>
+    </dl>
+  </section>
 
   <section id="sto" data-view="features_view">
-    <h2>Što dobivate</h2>
-    <div class="grid">
-      <div class="card"><b>Stranica za rezervacije</b><span>Klijent sam bira uslugu i termin.</span><br><a class="btn" href="price.html" data-ev="feature_page">To mi treba</a></div>
-      <div class="card"><b>Kalendar po mjestu</b><span>Svaka frizerka vidi svoj dan.</span><br><a class="btn" href="price.html" data-ev="feature_calendar">To mi treba</a></div>
-      <div class="card"><b>Podsjetnici</b><span>Poruka klijentu dan prije termina.</span><br><a class="btn" href="price.html" data-ev="feature_reminders">To mi treba</a></div>
-      <div class="card"><b>Evidencija klijenata</b><span>Posjeti i bilješke za svakog klijenta.</span><br><a class="btn" href="price.html" data-ev="feature_clients">To mi treba</a></div>
+    <div class="stack"><h2>Što dobivate</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="56" width="660" height="488" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="36" fill="#0a1524" font-weight="600">Stranica</text><text x="110" y="196" font-size="30" fill="#566174">rezervacije</text><rect x="110" y="250" width="420" height="26" fill="#dde2ea" rx="8" /><rect x="110" y="322" width="300" height="26" fill="#b9c3d2" rx="8" /><rect x="110" y="394" width="360" height="26" fill="#dde2ea" rx="8" /><circle cx="640" cy="460" r="36" fill="#dfe8f7" /><polyline points="616,460 634,482 668,430" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Stranica za rezervacije</h3><p>Klijent sam bira uslugu i termin.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_page">To mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="56" width="660" height="488" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="36" fill="#0a1524" font-weight="600">frizera</text><line x1="120" y1="470" x2="680" y2="470" stroke="#b9c3d2" stroke-width="4" fill="none" /><rect x="140" y="360" width="72" height="110" fill="#dfe8f7" rx="8" /><rect x="270" y="290" width="72" height="180" fill="#dde2ea" rx="8" /><rect x="400" y="380" width="72" height="90" fill="#b9c3d2" rx="8" /><rect x="530" y="230" width="72" height="240" fill="#12397a" rx="8" /></svg></div>
+        <h3>Kalendar po mjestu</h3><p>Svaka frizerka vidi svoj dan.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_calendar">To mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="220" y="48" width="360" height="504" fill="#ffffff" rx="36" stroke="#dde2ea" stroke-width="3" /><circle cx="400" cy="86" r="10" fill="#b9c3d2" /><rect x="260" y="170" width="280" height="150" fill="#dfe8f7" rx="18" /><polygon points="300,320 250,320 270,360" fill="#dfe8f7" /><text x="284" y="230" font-size="30" fill="#0a1524" font-weight="600">Podsjetnici</text><rect x="284" y="258" width="180" height="20" fill="#ffffff" rx="8" /><rect x="300" y="460" width="200" height="40" fill="#12397a" rx="12" /></svg></div>
+        <h3>Podsjetnici</h3><p>Poruka klijentu dan prije termina.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_reminders">To mi treba</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="56" width="660" height="488" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="110" y="140" font-size="36" fill="#0a1524" font-weight="600">klijenta</text><circle cx="270" cy="280" r="46" fill="#dfe8f7" /><circle cx="530" cy="280" r="46" fill="#12397a" /><ellipse cx="270" cy="390" rx="78" ry="40" fill="#dfe8f7" /><ellipse cx="530" cy="390" rx="78" ry="40" fill="#dde2ea" /><rect x="160" y="460" width="480" height="44" fill="#dfe8f7" rx="12" /></svg></div>
+        <h3>Evidencija klijenata</h3><p>Posjeti i bilješke za svakog klijenta.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_clients">To mi treba</a>
+      </article>
     </div>
   </section>
 
-  <section id="primjer" data-view="example_view">
-    <h2>Primjer (izmišljeni podaci)</h2>
-    <p class="fine">Mali frizerski salon u Splitu ima dva mjesta i termine prima telefonom i porukama na Instagramu. U subotu je vlasnica između šišanja odgovarala na pozive, a dvije klijentice ipak nisu došle. Sada klijentice rezerviraju preko poveznice na Instagram profilu, svaka frizerka vidi svoj dan, a svaka klijentica večer prije dobiva podsjetnik.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Pogledajte ponudu</a>
+  <section id="primjer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Primjer</h2>
+      <p>Mali frizerski salon u Splitu ima dva mjesta i termine prima telefonom i porukama na Instagramu. U subotu je vlasnica između šišanja odgovarala na pozive, a dvije klijentice ipak nisu došle. Sada klijentice rezerviraju preko poveznice na Instagram profilu, svaka frizerka vidi svoj dan, a svaka klijentica večer prije dobiva podsjetnik.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Pogledajte ponudu</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">Instagram</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">svoj dan</text><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">podsjetnik</text><rect x="120" y="300" width="960" height="420" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="170" y="390" font-size="36" fill="#0a1524" font-weight="600">frizerski salon</text><rect x="170" y="460" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="280" y="460" width="64" height="64" fill="#12397a" rx="10" /><rect x="390" y="460" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="500" y="460" width="64" height="64" fill="#dfe8f7" rx="10" /><rect x="610" y="460" width="64" height="64" fill="#12397a" rx="10" /><rect x="720" y="460" width="64" height="64" fill="#dfe8f7" rx="10" /><text x="170" y="640" font-size="32" fill="#566174">u Splitu</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Kako radi</h2>
-    <p>U malom salonu ili barbershopu telefon zvoni dok šišate. Svaki propušteni poziv može biti izgubljen termin, a svaki termin dogovoren porukom treba ručno prepisati u bilježnicu ili zajednički kalendar.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Kako radi</h2></div>
+    <div class="stack">
+      <p>U malom salonu ili barbershopu telefon zvoni dok šišate. Svaki propušteni poziv može biti izgubljen termin, a svaki termin dogovoren porukom treba ručno prepisati u bilježnicu ili zajednički kalendar.</p>
     <p>Najskuplji su klijenti koji ne dođu: prazan termin od 45 minuta u subotu više se ne može prodati. Odgovori na česta pitanja su u <a href="#faq" data-ev="click_opis_faq">odjeljku s pitanjima</a>, a početi možete <a href="#start" data-ev="click_opis_start">na dnu stranice</a>.</p>
     <p>Termin Salon radi jedan uski posao: prima rezervacije za vaš salon online i vodi kalendar svakog mjesta.</p>
     <p>Upišete usluge s trajanjem i cijenom te frizere ili kozmetičarke koji ih rade. Stranica za rezervacije pokazuje samo one termine koji su stvarno slobodni za tu uslugu i tu osobu.</p>
@@ -113,29 +147,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Kada salon ima više zaposlenih, vlasnik vidi sve kalendare zajedno i može premjestiti termin s jedne frizerke na drugu ako netko bude bolestan. Klijent pritom dobiva poruku s novim imenom i istim vremenom, pa zna kod koga dolazi.</p>
     <p>Za početak trebate samo popis usluga, njihovo trajanje i radno vrijeme svake osobe.</p>
     <p>Termin Salon prima rezervacije i šalje podsjetnike; naplata i fiskalizacija računa u salonu ostaju kao i dosad.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Česta pitanja</h2>
-    <h3>Za koga je?</h3>
-    <p>Za male frizerske i kozmetičke salone, salone za nokte i barbershope u Hrvatskoj s jednim do šest mjesta.</p>
-    <h3>Mogu li klijenti rezervirati bez poziva?</h3>
-    <p>Da. Na vašoj stranici sami biraju uslugu, frizera i slobodan termin.</p>
-    <h3>Izdaje li fiskalizirane račune?</h3>
-    <p>Ne. Prima rezervacije i šalje podsjetnike; račune izdajete kao i dosad.</p>
-    <h3>Mogu li ga koristiti već sada?</h3>
-    <p>Još ne. Usluga se priprema, a mi provjeravamo trebaju li je saloni u Hrvatskoj.</p>
+    <div class="stack"><h2>Česta pitanja</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Za koga je?</h3><p>Za male frizerske i kozmetičke salone, salone za nokte i barbershope u Hrvatskoj s jednim do šest mjesta.</p></div>
+      <div class="split flip"><h3>Mogu li klijenti rezervirati bez poziva?</h3><p>Da. Na vašoj stranici sami biraju uslugu, frizera i slobodan termin.</p></div>
+      <div class="split flip"><h3>Izdaje li fiskalizirane račune?</h3><p>Ne. Prima rezervacije i šalje podsjetnike; račune izdajete kao i dosad.</p></div>
+      <div class="split flip"><h3>Mogu li ga koristiti već sada?</h3><p>Još ne. Usluga se priprema, a mi provjeravamo trebaju li je saloni u Hrvatskoj.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Započnite</h2>
-    <p><label>Koliko mjesta ima vaš salon<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— odaberite —</option><option>1</option><option>2–3</option><option>4 ili više</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Započni</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Započnite</h2>
+    </div>
+    <div class="tile stack">
+      <label>Koliko mjesta ima vaš salon<select data-ev-focus="form_start"><option value="">— odaberite —</option><option>1</option><option>2–3</option><option>4 ili više</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Započni</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Termin Salon</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privatnost</a></p>
-  <p class="muted">Termin Salon prima online rezervacije i šalje podsjetnike za salon; usluge, cijene i naplata ostaju u salonu.</p>
+  <p>Termin Salon prima online rezervacije i šalje podsjetnike za salon; usluge, cijene i naplata ostaju u salonu.</p>
 </div></footer>
 
 </body>
